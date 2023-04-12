@@ -8,7 +8,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
-    "types": ["unplugin-vue-define-options/macros-global"],
+    "types": ["unplugin-vue-define-options/macros-global" /* ... */],
     // "types": ["frame_work/lib/src/components"], 用户使用组件库时 使用此配置指向 components.d.ts 文件实现属性提示
     "lib": [
       "esnext",

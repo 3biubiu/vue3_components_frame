@@ -7,5 +7,5 @@ import vue from "@vitejs/plugin-vue";
 import DefineOptions from "unplugin-vue-define-options/vite";
 // DefineOptions 可以实现在setup语法糖下给组件命名
 export default defineConfig({
-  plugins: [vue(),DefineOptions()],
+  plugins: [vue(), DefineOptions()],
 });
