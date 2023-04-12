@@ -3,6 +3,7 @@ import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 // 让我们的打包拥有声明文件
 import dts from "vite-plugin-dts";
+// @ts-ignore
 import DefineOptions from 'unplugin-vue-define-options/vite'
 export default defineConfig({
     build: {
