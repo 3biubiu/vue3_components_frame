@@ -15,9 +15,9 @@ export default defineConfig({
         // vite 基于 rollup  所以可以直接使用rollup 的配置进行覆写
         rollupOptions: {
             input: ["index.ts"],
-            //忽略打包vue文件
+            //忽略打包vue文件 忽略less文件 由 gulp 解决
             // // 确保外部化处理那些你不想打包进库的依赖
-            external: ["vue"],
+            external: ["vue", /\.less/],
             //input: ["index.ts"],
             output: [
                 {
