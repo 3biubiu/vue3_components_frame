@@ -32,8 +32,11 @@ const delPath = async (path: string) => {
             }
         });
         if (path != `${pkgPath}/biu`) {
+            
             // 删除文件或者目录
-            fs.rmdirSync(path);
+            // fs.rmdirSync(path);
+            fs.rmSync(path,{ recursive: true, force: true });
+
         }
     }
 };
