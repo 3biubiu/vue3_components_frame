@@ -19,6 +19,7 @@ export default defineConfig({
             // // 确保外部化处理那些你不想打包进库的依赖
             external: ["vue", /\.less/],
             //input: ["index.ts"],
+            // es 与 cjs 的区别 : https://juejin.cn/post/6974404976022192141
             output: [
                 {
                     //打包格式
