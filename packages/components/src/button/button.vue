@@ -22,6 +22,7 @@ defineOptions({ name: "biu-button" });
 
 type ButtonProps = {
     type?: string;
+    test: Boolean;
 }
 
 const buttonProps = defineProps<ButtonProps>()
