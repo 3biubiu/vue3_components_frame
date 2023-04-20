@@ -21,7 +21,7 @@ export const buildStyle = () => {
         .pipe(less())
         // 自动前缀
         .pipe(autoprefixer())
-        // dest  写入文件到指定路径 将 ${componentPath}/src 替换为 下面的路径
+        // dest  写入文件到指定路径 将base路径: ${componentPath}/src 替换为 下面的路径
         .pipe(dest(`${pkgPath}/biu/lib/src`))
         .pipe(dest(`${pkgPath}/biu/es/src`));
 }
